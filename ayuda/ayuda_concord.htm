@@ -1,0 +1,267 @@
+<!-- 
+   ayuda_principal.htm
+   ------------------------------------------------------------------------------------------------
+   P&aacute;gina de inicio. Se realiza la autenticaci&oacute;n.
+
+   Copyright (c) 10-03-2006 Ra&uacute;l BARAHONA CRESPO (raulbcneo@terra.es)
+     Verbatim copying and distribution of this entire document is permitted in 
+     any medium, provided this notice is preserved. 
+-->
+
+<html>
+<head><title></title>
+   <link rel="stylesheet" type="text/css" href="../comun/estilo.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <meta content="Microsoft FrontPage 4.0" name=GENERATOR>
+</head>
+
+<body background="../imagenes/logocaliope3_fondo.gif" bgproperties="fixed" >
+
+<table border="0" width="100%" bgcolor="#009900">
+  <tr>
+    <td width="270"><font color="#FFFFFF" size="6">&nbsp;Ayuda de </font><i><font color="#33CC33" size="6">Cal&iacute;ope</font></i></td>
+    <td style="border: 1 solid #FFFFFF">
+      <p align="center"><font color="#FFFFFF" size="6">Consultar corpus:<br>Concordancias</font></p>
+    </td>
+    <td width="100">
+      <p align="right"><font color="#33CC33" size="1"><b>&uacute;ltima actualizaci&oacute;n:</b> <br>21 de septiembre de 2010</font></p></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+
+<p><font color="#0000FF" size="5"><b>1. ¿En qu&eacute; consisten las concordancias?</b></font></p>
+
+<p>A la hora de abordar el estudio del &aacute;mbito en el que se utiliza un t&eacute;rmino
+en concreto, es muy &uacute;til observar las palabras que le anteceden y las palabras
+que le preceden dentro de un texto. Sin entrar en demasiados detalles, podemos
+decir que las concordancias consisten en buscar una palabra dentro un texto
+y&nbsp; mostrar las palabras que est&aacute;n delante y detr&aacute;s de ella.</p>
+
+<p>Gracias a las concordancias podemos establecer relaciones entre t&eacute;rminos.
+Por ejemplo, de la observaci&oacute;n de las concordancias obtenemos que la palabra
+&quot;download&quot; suele ir acompa&ntilde;ada de la palabra &quot;file&quot;. Estos
+resultados pueden almacenarse en el glosario de t&eacute;rminos (ver la ayuda
+correspondiente).</p>
+
+<p>&nbsp;</p>
+
+<p><font color="#0000FF" size="5"><b>2. Men&uacute; y par&aacute;metros de concordancias</b></font></p>
+<p>La pantalla principal de la operaci&oacute;n concordancia tiene una sección donde introducir las opciones de b&uacute;squeda y unos botones para seleccionar las acciones.<br/><br/>
+Introduzca un término a buscar. En caso de ser un término compuesto, introdúzcalo como términos simples separados por espacios (por ejemplo, cd rom).<br />
+Introduzca la distancia como entero positivo y seleccione el check para indicar que la distancia es exacta.<br /><br/>
+Pulse <img src="../imagenes/ok_tr.png" border="0" title="A&ntilde;adir" /> para añadir los datos a la estructura.<br />
+Pulse <img src="../imagenes/orden_asc.png" border="0" title="Subir" /> para subir una fila, y  <img src="../imagenes/orden_desc.png" border="0" title="Bajar" /> para bajarla.<br />
+Pulse <img src="../imagenes/papelera_ico.png" border="0" title="Eliminar" /> para eliminar la fila seleccionada.<br />
+Seleccione el entorno (n&uacute;mero de palabras mostradas por delante y detr&aacute;s de las concordancias encontradas).<br/>
+
+<form action="concordancia.php" name="formulario" method="post">
+<p align="center">
+<table  width="700" border="0" bgcolor="#FFFF99" class="conborde" cellpadding="5" cellspacing="5">
+   <tr>
+      <td align="center" colspan="4">
+         <span class="titulo titulo_gris">Opciones</span><br>
+	 </td>
+   </tr>
+   <tr>
+      <td colspan="4">
+      	<table width="100%" border="0" bgcolor="#cccc00" cellpadding="0" cellspacing="0" class="conborde">
+		  <tr>
+		    <td>
+				<table  width="100%" class="mensaje">
+					<tr>
+						<td colspan="3" align="center"><span class="subtitulo" id="mensaje_opciones">Pulse <b><i>aqu&iacute</i></b> para ocultar las opciones de b&uacute;squeda de concordancias</span></td>
+						<td align="right"><img id="imagen_opciones" border="0" src="../imagenes/orden_desc.png" /></td>
+					</tr>
+				</table><br>
+		      	<table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabla_opciones">
+		      	   <tr>
+		      	      <td align="center">T&eacute;rmino</td>
+		      	      <td align="center">Distancia</td>
+		      	      <td>&nbsp;</td>
+		      	      <td>&nbsp;</td>
+		      	   </tr>
+		      	   <tr>
+		      	   	<td align="center">
+		      	   	   <select name="palabra[]" size="8" title="T&eacute;rmino a buscar">
+		      	   	      <option value="">of</option>
+		      	   	      <option value="">cd rom</option>
+		      	   	   </select>
+		      	   	</td>
+		      	   	<td align="center">
+		      	   	   <select name="distancia[]" size="8" disabled="true" title="Distancia al t&eacute;rmino anterior">
+		      	   	      <option value=""></option>
+		      	   	      <option value=""><= 2</option>
+		      	   	   </select>
+		      	   	</td>
+		            <td>&nbsp;</td>
+		      	   	<td>
+		      	   	   <a href="#"><img src="../imagenes/orden_asc.png" border="0" title="Subir" /></a><br><br>
+		      	   	   <a href="#"><img src="../imagenes/orden_desc.png" border="0" title="Bajar" /></a><br><br><br>
+		      	   	   <a href="#"><img src="../imagenes/papelera_ico.png" border="0" title="Eliminar" /></a>
+		      	   	</td>
+		      	   </tr>
+		      	   <tr>
+		      	      <td colspan="4">&nbsp;</td>
+		      	   </tr>
+		      	   <tr>
+		      	      <td align="center">Nuevo&nbsp;T&eacute;rmino</td>
+		      	      <td align="center">Distancia <sub><i>(al t&eacute;rmino anterior)</i></sub></td>
+		      	      <td>Distancia exacta</td>
+		      	      <td>&nbsp;</td>
+		      	   </tr>
+		      	   <tr>
+		      	      <td align="center"><input type="text" name="nuevoTermino" size="30" maxlength="100" title="T&eacute;rmino a a&ntilde;adir en la b&uacute;squeda"/></td>
+		      	      <td align="center"><input type="text" name="nuevaDistancia" size="10" maxlength="4"  title="Distancia al t&eacute;rmino anterior"/></td>
+		      	      <td><input type="checkbox" name="distanciaexacta"  title="Indica si la distancia es exacta o menor o igual"/></td>
+		      	      <td><a href="#" onclick="anadirTermino()"><img src="../imagenes/ok_tr.png" border="0" title="A&ntilde;adir" /></a></td>
+		      	   </tr>
+		      	   <tr>
+		      	      <td colspan="4">&nbsp;</td>
+		      	   </tr>
+		      	   <tr>
+		      	      <td colspan="4">&nbsp;Entorno:&nbsp;&nbsp;
+		      	         <select name="entorno" title="Entorno">
+		      	            <option value="1">1 palabra</option>
+		      	            <option value="2">2 palabras</option>
+		      	            <option value="3">3 palabras</option>
+		         	        <option value="4">4 palabras</option>
+		      	            <option value="5">5 palabras</option>
+		      	         </select>
+		      	      </td>
+		           </tr>
+		      	   <tr>
+		      	      <td colspan="4">&nbsp;</td>
+		      	   </tr>
+		      	</table>
+		    </td>
+		  </tr>
+		</table>
+      </td>
+   </tr>
+</table>
+</form>
+</p>
+
+Seleccione las opciones y pulse <input type="button" class="boton" value=" Buscar texto " onclick=""/> para buscar uno o varios textos sobre los que realizar la búsqueda de concordancias.
+Selecciones los textos pulsando el campo check en la fila o el campo al lado del texto <i>Todos</i>.<br/><br/>
+
+Tiene además los siguientes botones:
+<div align="center">
+  <table border="0" width="80%">
+   <tr>
+      <td width="22%">
+        <input type="button" class="boton" value=" Buscar Concordancias " onclick=""/>
+      </td>
+      <td width="78%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Inicia la b&uacute;squeda de las concordancias</td>
+   	 </td>
+   </tr>
+   <tr>
+      <td width="22%">
+		<input type="button" class="boton boton_volver" value="      Volver " onclick=""/>        
+      </td>
+      <td width="78%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Volver al men&uacute; principal de consulta del corpus
+      </td>
+   </tr>
+   <tr>
+      <td width="22%">
+        <input type="button" class="boton" value=" Limpiar Formulario " onclick=""/>
+      </td>
+      <td width="78%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Limpiar el formulario
+      </td>
+   </tr>
+  </table>
+</div>
+
+<p><font color="#0000FF" size="5"><b>3. Resultados de las concordancias</b></font></p>
+<p>Tras haber escrito un t&eacute;rmino y haber seleccionado los par&aacute;metros de
+b&uacute;squeda, aparece en pantalla un encabezado seguido
+del resultado de la b&uacute;squeda.</p>
+
+<p>El <b>encabezado</b> consta de la siguiente informaci&oacute;n: tipo de operaci&oacute;n realizada, t&eacute;rmino buscado, entorno, textos seleccionados &nbsp; y fecha en la que se ha realizado la operaci&oacute;n de concordancia. Por ejemplo:</p>
+
+<p class="Info">
+	<img border="0" src="../imagenes/info.gif">
+	<b>Operaci&oacute;n:</b> Concordancia <img border="0" src="../imagenes/separador2.gif">
+	<b>Palabra:</b> of <img border="0" src="../imagenes/separador2.gif"> 
+	<b>Entorno:</b> 1 <img border="0" src="../imagenes/separador2.gif"> 
+	<b>Textos seleccionados:</b> [Active service] <img border="0" src="../imagenes/separador2.gif"> 
+	<b>Fecha:</b> Martes, 21-Septiembre-2010,  18:20:11 <img border="0" src="../imagenes/separador2.gif">
+	<img border="0" src="../imagenes/tit_principal_info." align="bottom" >
+</p>
+
+<br/>
+
+<p>Para cada texto tenemos una cabecera con la informaci&oacute;n correspondiente:</p>
+
+<div align="center">
+<table align='center' border='0' cellpadding='0' cellspacing='0'>
+	<tr style='cursor:hand' onclick=show(241) title=Pulse&nbsp;aqu&iacute;&nbsp;para&nbsp;mostrar/ocultar>
+		<td colspan=3>
+			<p class='Info2'><b>TEXTO:</b>&nbsp;Active&nbsp;service.&nbsp;C&Oacute;DIGO:&nbsp;241.&nbsp;<b>OCURRENCIAS&nbsp;ENCONTRADAS:</b>&nbsp;140&nbsp;&nbsp;</p>
+		</td>
+	</tr>
+</table>
+</div>
+
+<p>Cada resultado se presenta de la siguiente manera:&nbsp;</p>
+
+<div align="center">
+	<table align='center' border='0' cellpadding='0' cellspacing='0' width="300px">
+		<tr>
+			<td colspan='3' style='border: dashed;border-width: 1px;border-color: #808080;margin-left: 1%;margin-right: 1%;' id='241'>
+				<table width='100%' border='0' cellpadding='0' cellspacing='4' bgcolor='#D8D7A3'>
+					<tr>
+						<td align='center'><input type='checkbox' name='resultado2410' value="241# address#of#the #0">&nbsp;</td>
+						<td align=center>address</td>
+						<td></td>
+						<td align='center' bgcolor='#CCCC00'><a href='#' target='_blank'>of</a></td>
+						<td align='center'>the</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<p>
+	Al principio de la l&iacute;nea se encuentra un check que nos permite seleccionar la fila para posteriores operaciones.<br/> 
+	El t&eacute;rmino o t&eacuter;rminos includos en la concordacia vienen resaltados, y si pulsa sobre uno de ellos se abrirá un detalle del texto con el t&eacute;rmino resaltado.<br/> 
+	A ambos lados del primer y &uacute;ltimo t&eacute;rmino aparece el &aacute;mbito; en el ejemplo anterior, el &aacute;mbito seleccionado es 1, por eso aparece una palabra
+	delante y otra detr&aacute;s del t&eacute;rmino a buscar.<br/><br/>
+	
+	Se dispone de las siguientes operaciones:<br/><br/>
+</p>
+
+<div align="center">
+  <table border="0" width="80%">
+    <tr>
+      <td width="7%">
+        <input type="button" class="boton boton_descarga" value="      Guardar Resultado " onclick=""/>
+      </td>
+      <td width="93%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Descarga de todos los resultados</td>
+    </tr>
+    <tr>
+      <td width="7%">
+        <input type="button" class="boton boton_descarga" value="      Guardar Seleccionados " onclick=""/>
+      </td>
+      <td width="93%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Descarga de los resultados cuyos campos check est&aacute;n seleccionados</td>
+    </tr>
+    <tr>
+      <td width="7%">
+        <input type="button" class="boton boton_descarga" value="      A&ntilde;adir como Contextos " onclick=""/>
+      </td>
+      <td width="93%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+      	Creaci&oacute;n de contextos a partir de los resultados seleccionados (s&oacute;lo para b&uacute;squedas con un t&eacute;rmino y para perfiles administrador y usuario avanzado) 
+      </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

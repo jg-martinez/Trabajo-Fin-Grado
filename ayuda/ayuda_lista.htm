@@ -1,0 +1,136 @@
+<!-- 
+   ayuda_principal.htm
+   ------------------------------------------------------------------------------------------------
+   Pagina de inicio. Se realiza la autenticacion.
+
+   Copyright (c) 10-03-2006 Ra&uacute;l BARAHONA CRESPO (raulbcneo@terra.es)
+     Verbatim copying and distribution of this entire document is permitted in 
+     any medium, provided this notice is preserved. 
+-->
+
+<html>
+<head><title></title>
+   <link rel="stylesheet" type="text/css" href="../comun/estilo.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <meta content="Microsoft FrontPage 4.0" name=GENERATOR>
+</head>
+
+<body background="../imagenes/logocaliope3_fondo.gif" bgproperties="fixed" >
+
+<table border="0" width="100%" bgcolor="#009900">
+  <tr>
+    <td width="270"><font color="#FFFFFF" size="6">&nbsp;Ayuda de </font><i><font color="#33CC33" size="6">Cal&iacute;ope</font></i></td>
+    <td style="border: 1 solid #FFFFFF">
+      <p align="center"><font color="#FFFFFF" size="6">Consultar corpus:<br>Listado de palabras de un texto</font></p>
+    </td>
+    <td width="100">
+      <p align="right"><font color="#33CC33" size="1"><b>&uacute;ltima actualizaci&oacute;n:</b> <br>21 de septiembre de 2010</font></td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+
+<p><font color="#0000FF" size="5"><b>1. ¿En qu&eacute; consiste el listado de
+palabras de un texto?</b></font></p>
+
+<p>A la hora de abordar el estudio de los t&eacute;rminos m&aacute;s comunes en un tipo de
+texto determinado es muy &uacute;til tener un <b>listado</b> completo con todas las
+palabras de los textos a estudiar, indicando para cada palabra su <b>frecuencia</b>
+de aparici&oacute;n. De esta manera puede observarse cu&aacute;les son los t&eacute;rminos que
+aparecen. Si un t&eacute;rmino tiene una frecuencia alta es porque su importancia
+dentro del texto es muy grande, puesto que es necesario utilizarlo con asiduidad
+en el mismo.</p>
+
+<p>Esta utilidad es la que est&aacute; implementada en este apartado.</p>
+
+<p>&nbsp;</p>
+<p><font color="#0000FF" size="5"><b>2. Men&uacute; de listado de palabras de un texto</b></font></p>
+<p>La pantalla principal muestra un buscador de textos.<br/>Para ver el listado de palabras de un texto en concreto,
+se marca dicho texto y se pulsa el bot&oacute;n [ Mostrar Listado ].<br/> Para ver una comparaci&oacute;n de listados, se marca más de un texto y
+se pulsa el bot&oacute;n [ Mostrar Listado ].<br/>Si no se selecciona
+ning&uacute;n texto y se pulsa el bot&oacute;n [ Mostrar Listado ], el sistema mostrar&aacute; por
+pantalla un mensaje de aviso de que no hay ning&uacute;n texto seleccionado.</p>
+
+<p>En la parte izquierda de la pantalla aparece una columna con algunas de las
+operaciones disponibles para el listado de las palabras de un texto:</p>
+
+<div align="center">
+  <center>
+  <table border="0" width="80%">
+    <tr>
+      <td width="22%">
+        <input type="button" class="boton boton_volver long_150" value="      Volver a Corpus " onclick=""/>
+	  </td>
+      <td width="78%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">-></font></span></b>
+        Vuelve al men&uacute; principal de consulta del corpus</td>
+    </tr>
+<!--
+    <tr>
+      <td width="22%">
+        <p align="center">&nbsp;Nº columnas</td>
+      <td width="78%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Nº de columnas en que estar&aacute; dividido el listado</td>
+    </tr>
+ -->
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+
+<p><font color="#0000FF" size="5"><b>3. Resultados del listado de palabras de un texto</b></font></p>
+<p>Tras haber seleccionado uno o m&aacute;s textos, aparece en pantalla un encabezado seguido
+del listado de palabras dividido en las columnas seleccionadas anteriormente, agrupadas por texto.</p>
+
+<p>
+El <b>encabezado</b> consta de la siguiente informaci&oacute;n: tipo de operaci&oacute;n
+realizada, texto, idioma del texto, n&uacute;mero de palabras del texto y fecha en la
+que se ha realizado la operaci&oacute;n de listado.
+</p>
+
+<p>Cada palabra de la lista aparece escrita con letras may&uacute;sculas y tiene
+asociado un n&uacute;mero, que es la frecuencia de aparici&oacute;n de esa palabra dentro
+del texto. Si el texto aparece en color azul es que existe en el glosario. Pulsar el enlace permitirá dar de alta
+o modificar el término, así como ver sus apariciones en el texto.<br/>A continuaci&oacute;n se muestra un ejemplo:</p>
+
+<p align="center">
+<table border='1' cellpadding='4' cellspacing='0' bordercolor='#CC0000'>
+	<tr bgcolor='#D8D9A4'>
+		<td colspan='2'><b> aab </b></td>
+	</tr>
+	<tr bgcolor='#D8D9A4'>
+		<td><a href='#'><b>T&eacute;rmino</b></a>&nbsp;<img src='../imagenes/orden_asc.png' border='0' /></td>
+		<td><a href='#'><b>Frecuencia</b></a>
+	</tr>
+	<tr>
+		<td><a href='#'  class='EnGlosario'>ABLE</a></td>
+		<td><b>1</b></td>
+	</tr>
+	<tr>
+		<td><a href='#'>ACCOMPLISH</a></td>
+		<td><b>3</b></td>
+	</tr>
+</table>
+</p>
+
+<p>&nbsp;</p>
+
+<p><font color="#0000FF" size="5"><b>3.1. Consulta de una palabra dentro del texto</b></font></p>
+
+<p>Para visualizar cada una de las palabras del listado en su &aacute;mbito dentro del
+texto, basta con pinchar en la palabra deseada del listado de palabras del
+texto.<br/>Se preguntará a continuaci&oacute;n si se desea ver las apariciones de la palabra en el texto o
+si se desea dar de alta/modificar el t&eacute;rmino.<br/>Si se selecciona [ Cancelar ] se abrir&aacute; entonces una nueva ventana con el texto completo en el cual
+est&aacute; resaltado el t&eacute;rmino deseado en todas sus ocurrencias. De esta manera se
+puede observar mejor el &aacute;mbito de cada palabra en un texto.</p>
+
+<p>El texto con el t&eacute;rmino marcado est&aacute; precedido de un <b>encabezado</b> con
+la siguiente informaci&oacute;n: tipo de operaci&oacute;n realizada, texto, idioma del
+texto, n&uacute;mero de palabras del texto y fecha en la que se ha realizado la
+operaci&oacute;n de listado. Tambi&eacute;n aparece al final del texto un <b>pie</b>
+indicando el n&uacute;mero de ocurrencias de la palabra en el texto.
+</p>
+
+<p>&nbsp;</p>
+
+</body>
+</html>

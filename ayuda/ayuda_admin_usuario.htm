@@ -1,0 +1,192 @@
+<!-- 
+   ayuda_principal.htm
+   ------------------------------------------------------------------------------------------------
+
+   Copyright (c) 10-03-2006 Raul BARAHONA CRESPO (raulbcneo@terra.es)
+     Verbatim copying and distribution of this entire document is permitted in 
+     any medium, provided this notice is preserved. 
+-->
+<html>
+<head>
+	<title>Calíope</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/ayudas.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<meta http-equiv="Content-Type" content="text/html"; charset=utf-8">
+	<meta content="Microsoft FrontPage 4.0" name=GENERATOR>
+</head>
+
+<body>
+
+<header>
+	<h1>Administración de Usuarios</h1>
+</header>
+<section>
+
+<h3>1. Menú de administración de usuarios</h3>
+
+<p>El menú de administración de usuarios presenta por pantalla una lista con
+los datos de todos los usuarios que pueden acceder al sistema. La lista está
+dividida en dos partes: los usuarios con privilegios de <i>administrador</i>, y
+los usuarios con privilegios de <i>usuario</i>.</p>
+
+<p>De cada usuario se listan los siguientes datos:</p>
+
+<ul>
+  <li><b>login</b> (nombre de usuario, que es único para cada usuario del sistema)</li>
+  <li><b>DNI / número de matrícula</b> (para alumnos de la Facultad de Informática)</li>
+  <li><b>nombre</b> y <b> apellidos</b></li>
+  <li><b>email</b></li>
+</ul>
+<p>Cuando alguno de estos datos se desconozca, la casilla correspondiente de la
+lista permanecerá en blanco. Por razones de seguridad, la contraseña de los
+usuarios no se muestra por pantalla.</p>
+<p>Las operaciones de administración disponibles son las siguientes:</p>
+<ul>
+  <li> <a href="#alta">alta de nuevo usuario</a>,</li>
+  <li> <a href="#alta2">alta de nuevos usuarios</a> (a partir de un fichero),&nbsp;</li>
+  <li> <a href="#cambiopassword">cambio de contraseña</a></li>
+  <li><a href="#baja"> eliminación</a> de un usuario,</li>
+  <li><a href="#modif"> modificación</a> de un usuario.</li>
+</ul>
+
+<h3>2. Operaciones</h3>
+<p>En la parte izquierda de la pantalla aparece una columna con algunas de las
+operaciones disponibles para la administración de los usuarios:</p>
+
+<div align="center">
+  <center>
+  <table border="0" width="80%">
+    <tr>
+      <td width="22%">
+        <p align="center"><input type="button" value="Nuevo Usuario" onclick="" /></td>
+      <td width="78%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Creación de un usuario nuevo</td>
+    </tr>
+    <tr>
+      <td width="22%">
+        <p align="center"><input type="button" value="Nuevos Usuarios" onclick="" /></td>
+      <td width="78%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Creación de un conjunto de usuarios nuevos a partir de los datos
+        alojados en un fichero</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;La administración de usuarios se completa con los dos iconos que aparecen en la lista de usuarios, al final de cada línea :</p>
+
+<div align="center">
+  <center>
+  <table border="0" width="80%">
+    <tr>
+      <td width="7%">
+        <p align="center"><img border="0" src="../imagenes/modificar_ico.gif" width="17" height="20"></td>
+      <td width="93%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Modificación de losdatos de un usuario</td>
+    </tr>
+    <tr>
+      <td width="7%">
+        <p align="center"><img border="0" src="../imagenes/texto_orig.gif" width="18" height="20"></td>
+      <td width="93%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Modificación de contraseña</td>
+    </tr>
+    <tr>
+      <td width="7%">
+        <p align="center"><img border="0" src="../imagenes/papelera_ico.png" width="18" height="20"></td>
+      <td width="93%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        Eliminación de un usuario </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<h4>2.1. Alta de un usuario nuevo<a name="alta"></a></h4>
+
+<p>Para dar de alta un nuevo usuario hay que pulsar el botón del menú de
+administración de usuarios que se indica en el apartado <i>2. Operaciones</i>
+.</p>
+
+<p>Es necesario rellenar el formulario con los datos del usuario. Hay varios
+campos que hay rellenar de forma obligatoria y sin los cuales no se puede dar de
+alta un nuevo usuario: <u>login</u> y c<u>ontraseña</u> (password). Este
+último dato hay que introducirlo de forma repetida para evitar que el usuario
+pueda equivocarse a la hora de escribirlo. Si alguno de estos datos no se
+introducen, el sistema muestra un mensaje de aviso por pantalla.</p>
+
+<p>Como es evidente, el login de cada usuario es <b>único</b>. Por tanto si se
+intenta introducir un usuario nuevo cuyo login ya es propiedad de un usuario
+existente, el sistema avisará del error y no se procederá con el alta de
+usuario.</p>
+
+<h4>2.2. Alta de usuarios nuevos (a partir de un
+fichero) <a name="alta2"></a></h4>
+<p>Mediante esta opción, se pueden dar de alta varios usuarios a la vez. Los
+datos de estos nuevos usuarios deben estar contenidos en un fichero de texto que
+el usuario debe proporcionar al sistema pulsando el correspondiente botón
+[Examinar...] que aparece en la ventana.</p>
+<p>El fichero debe contener el login de los usuarios que se desean dar de alta,
+uno por cada línea del fichero. Un ejemplo de fichero válido sería el
+siguiente:</p>
+<blockquote>
+<p><font face="Courier New">raul_barahona<br>pedro_lopez<br>d960252<br>beatriz</font></p>
+</blockquote>
+<p>El único dato proporcionado para cada usuario nuevo es el login, por lo que
+la contraseña de cada uno de ellos coincidirá con su contraseña. Esta opción
+se ha implementado de esta manera debido a que, en principio, la aplicación
+será usada casi totalmente por alumnos de la Facultad de Informática (UPM), y
+ésta es una manera rápida y sencilla para dar de alta de una sola vez a un
+conjunto de alumnos.</p>
+<p>El sistema verificará que los login incluídos en el fichero no pertenecen a
+ningún usuario ya existente. Se mostrará por pantalla la confirmación de la
+validez de los datos del fichero:</p>
+<div align="center">
+  <center>
+  <table border="0" width="80%">
+    <tr>
+      <td width="23%">
+        <p align="center"><img border="0" src="../imagenes/ok_tr.png" width="23" height="20"><font face="Courier New">login_del_usuario</font></td>
+      <td width="77%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        El usuario se ha dado de alta correctamente</td>
+    </tr>
+    <tr>
+      <td width="23%">
+        <p align="center"><img border="0" src="../imagenes/ko_tr.png" width="18" height="20"><font face="Courier New">login_del_usuario</font></td>
+      <td width="77%"><b><span style="mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: ES; mso-fareast-language: ES; mso-bidi-language: AR-SA"><font face="Symbol" size="4">®</font></span></b>
+        El usuario no se ha dado de alta, el login es propiedad de un usuario ya
+        existente </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<h4>2.3. Eliminación de un usuario <a name="baja"></a></h4>
+
+<p>Tras pulsar el botón <img border="0" src="../imagenes/papelera_ico.png" width="18" height="20">,
+se muestra en pantalla un mensaje de confirmación de la eliminación junto con
+los datos del usuario que se va a eliminar. Esta confirmación es necesaria para
+asegurar que se elimina el usuario deseado y no otro cualquiera que se podría
+haber seleccionado por error.</p>
+
+<h4>2.4. Modificación de contraseña <a name="cambiopassword"></a></h4>
+
+<p>Tras pulsar el botón <img border="0" src="../imagenes/texto_orig.gif" width="18" height="20">,
+se muestra una pantalla con dos campos de texto para introducir la nueva contraseña y su repetición.
+Esto permite que una contraseña no se introduzca por error.</p>
+
+<h4>2.5. Modificación de un usuario <a name="modif"></a></h4>
+
+<p>Tras pulsar el botón <img border="0" src="../imagenes/modificar_ico.gif" width="17" height="20">,
+se muestra en pantalla un formulario con todos los datos del usuario
+seleccionado. Todos los campos son modificables excepto el <u>login</u> y la <u>contraseña</u>,
+para evitar errores de coherencia.</p>
+
+<p>Después de haber modificado los datos, se confirman pulsando el botón [
+Aceptar ].</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</section>
+</body>
+
+</html>

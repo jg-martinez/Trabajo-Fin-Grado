@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    background-color: #ffffff;
+	font-size:17px;
+}
+
+header {
+	margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+	margin-bottom: 0px;
+    text-align: center;
+	color: #2980b9;
+	font-size: 70%;
+	font-family: "Open Sans";
+}
+
+#opciones {
+	font-family: "Open Sans";
+	color:#2980b9;
+	text-align: center;
+	font-size: 100%;
+	font-weight:700;
+}
+td {
+	font-family: "Open Sans";
+	font-size: 16px;
+	color: #515151;
+}
+
+input {
+	background: #ffffff;
+	color: #515151;
+	font-size: 95%;
+	padding: 6px 12px 6px 12px;
+	border: 1px solid #7f8c8d;
+	text-align: center;
+	-moz-border-radius:3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	width: 250px;
+	height: 30px;
+}
+
+input[type="button"] {
+	margin: 0;
+    color:#ffffff;
+    background-color:#2980b9;
+    border:0px;
+	font-size: 95%;
+	width: 165px;
+	font-family: "Open Sans";
+}
+
+select{
+	background: #ffffff;
+	color: #515151;
+	font-size: 95%;
+	padding: 6px 12px 6px 12px;
+	border: 1px solid #7f8c8d;
+	text-align: center;
+	-moz-border-radius:3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	text-align: center;
+	width: 250px;
+	height: 30px;
+}
+
+#nuevoTermino{
+	width: 170px;
+}
+
+#categoria{
+	width: 170px;
+}
+
+#entorno {
+	width: 170px;
+}
+
+#donde_buscar{
+	width: 170px;
+}
+
+#first_row td{
+	padding-bottom: 10px;
+}
+
+input#desde{
+	background: #ffffff;
+	color: #515151;
+	font-size: 95%;
+	padding: 6px 12px 6px 12px;
+	border: 1px solid #7f8c8d;
+	text-align: center;
+	-moz-border-radius:3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	width: 65px;
+	height: 30px;
+
+}
+
+option {
+	font-family: "Open Sans";
+	font-size: 16px;
+	color:#515151;
+}
+
+input#hasta{
+	background: #ffffff;
+	color: #515151;
+	font-size: 95%;
+	padding: 6px 12px 6px 12px;
+	border: 1px solid #7f8c8d;
+	text-align: center;
+	-moz-border-radius:3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	width: 65px;
+	height: 30px;
+}
+
+input[type="checkbox"]{
+	width: 20px;
+	height: 20px;
+}
+table {
+	margin-top: 10px;
+	border-collapse: collapse;
+}
+#texto_titulo a{
+	text-align: center;
+	font-size:95%;
+}
+
+#texto_titulo a:link {
+	color:#ffffff;
+	font-family:"Open Sans";
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#texto_titulo a:hover {
+	font-family: "Open Sans";
+	color: #ffffff;
+	font-weight: 700;
+}
+
+#texto_titulo a:visited{
+	color:#ffffff;
+	font-family:"Open Sans";
+	font-weight: 700;
+}
+#texto_titulo a:visited:hover {
+	font-family: "Open Sans";
+	color: #ffffff;
+	font-weight: 700;
+}

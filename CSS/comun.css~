@@ -1,0 +1,48 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background:#ecf0f1;
+}
+
+#cabecera_principal h1 {
+    font-family: 'Grand Hotel', sans-serif;
+    /* color: #3498db; */
+    color: #2980b9;
+    font-weight:400;
+    font-size: 400%;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#cabecera_principal h2 {
+    color: #2980b9;
+    font-weight: 400;
+    font-size: 115%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {text-align:center;}
+
+input {
+    padding: 6px 12px 6px 12px;
+    text-align: center;
+    margin: 3px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    color:#FFFFFF;
+    background-color:#2980b9;
+    border:3px;
+    border-color:#2980b9;
+}
+
+#pagina_acceso {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
